@@ -17,7 +17,7 @@
 <body> 
     <div id="kontener">
         <div id="gorna_czesc_kontenera">
-            <img class="logo" src="gfood.jpg" alt="Logo strony.pl" />
+            <a href="index.html"><img class="logo" src="gfood.jpg" alt="Logo strony.pl" /></a>
             <div id="gorne_menu">
                 <ul id="wlasciwe_gorne_menu">
                   <li style="border-left: 1px solid black;"> <a href="logowanie.html"><span class="link"></span>Logowanie</a></li>
@@ -52,7 +52,7 @@
                 </li>
                 <li><span class="odstepik">: - :</span></li>
                 <li><a href="#"><span class="link2">Posiłki</span></a>
-                    <ul class="drugi_poziom">
+                    <ul class="trzeci_poziom">
                         <li class="pierwszy_element_menu"><a href="burgery.html">Burgery </a></li>
                         <li><a href="desery.html">Desery </a></li> 
                         <li><a href="kebab.html">Kebab </a></li>
@@ -80,25 +80,32 @@
                  <h1>Menu</h1>
             
                 <p> Rock'N'Steak 280g / SOS BBQ / Frytki stekowe/ mix sałat - 89 PLN</p>
+                <form action="#" method="post">
+                    <input type="checkbox" name="nazwa" value="wartość">Zaznacz to danie
+                </form></br>
                 <p>Country Burger /180g wołowiny / jajko sadzone / grilowany bekon / sałata / pomidor / rukola / sos Dijon - 39 PLN</p>
+                <form action="#" method="post">
+                    <input type="checkbox" name="nazwa" value="wartość">Zaznacz to danie
+                </form></br>
                 <p>grillowane żeberka BBQ / sos BBQ / Jack Daniel's Tennesse Whisky /Frytki stekowe / mix sałat - 59 PLN</p>
-               
-                
-                <p>Oceń restauracje:</p>
+                <form action="#" method="post">
+                    <input type="checkbox" name="nazwa" value="wartość">Zaznacz to danie
+                </form></br>
+                <p>Oceń restauracje:</p></br>
+                <p>Wpisz cyfre od 1 -5 gdzie 1 to ocena słaba 5 znakomita</p>
                     <body>
                         <body style="background-color:white">  
                             <form action="#.php" method="post"></form>    
                             <fieldset>
-                    <legend>Wpisz cyfre od 1 -5 gdzie 1 to ocena słaba 5 znakomita</legend>
                     <label for="danie-id">Danie:</label> 
-                    <input type="number" size="2 name="ocena" id="danie" minlength="1" maxlength="1" required="required"><br>
+                    <input type="number" size="2" name="ocena" id="danie" minlength="1" maxlength="1" pattern="[1-5]{5}" required="required"><br>
                     <label for="obsługa-id">Obsługa:</label>
-                    <input type="number" size="2" name="ocena" id="obsługa-id" minlength="1" maxlength="1" required="required"><br>
+                    <input type="number" size="2" name="ocena" id="obsługa-id" minlength="1" maxlength="1" pattern="[1-5]{5}" required="required"><br>
                     <label for="dostawa-id">Czas dostawy:</label>
-                    <input type="number" size="2" name="ocena" id="dostawa-id" minlength="1" maxlength="1" required="required"><br>
+                    <input type="number" size="2" name="ocena" id="dostawa-id" minlength="1" maxlength="1" pattern="[1-5]{5}" required="required"><br>
                     <label for="ocena-id">Aktualna ocena użytkowników wynosi:</label>
-                    <input type="number" size="2" name="ocena" id="ocena-id" minlength="1" maxlength="5" required="required"><br>
-                    <button type="submit">Zapisz</button>
+                    <input type="number" size="2" name="ocena" id="ocena-id" minlength="1" maxlength="1" pattern="[1-5]{5}" required="required"><br>
+                    <input class="submit_button" type="submit" value="Zapisz" />	
                 </div>
 
             </div>

@@ -17,11 +17,12 @@
 <body> 
     <div id="kontener">
         <div id="gorna_czesc_kontenera">
-            <img class="logo" src="gfood.jpg" alt="Logo strony.pl" />
+            <a href="index.html"><img class="logo" src="gfood.jpg" alt="Logo strony.pl" /></a>
             <div id="gorne_menu">
                 <ul id="wlasciwe_gorne_menu">
                   <li style="border-left: 1px solid black;"> <a href="logowanie.html"><span class="link"></span>Logowanie</a></li>
                   <li> <a href="rejestracja.html"><span class="link"></span>Rejestracja</a></li>
+                  <li> <a href="profile.html"><span class="link"></span>Konto</a></li>
                     
                 </ul>
             </div>
@@ -37,37 +38,39 @@
         </div>
         <!-- koniec div gorna czesc kontenera-->
         <div id="srodkowe_menu">
-        <ul id="pierwszy_poziom">
-            <li><a href="restauracje.html"><span class="link2">Restauracje</span></a></li>
-            <li><span class="odstepik">: - :</span></li>
-            <li><a href="#"><span class="link2">Kuchnia Świata</span></a>
-                <ul class="drugi_poziom">
-                    <li class="pierwszy_element_menu"><li><a href="amerykanska.html">Amerykańska </a></li>
-                    <li><a href="azjatycka.html">Azjatycka </a></li>
-                    <li><a href="Polska.html">Polska </a></li>
-                    <li><a href="turecka.html">Turecka </a></li>
-                    <li><a href="wloska.html">Włoska </a></li>   
-                 </ul>
-            </li>
-            <li><span class="odstepik">: - :</span></li>
-            <li><a href="#"><span class="link2">Posiłki</span></a>
-                <ul class="drugi_poziom">
-                    <li class="pierwszy_element_menu"><a href="burgery.html">Burgery </a></li>
-                    <li><a href="desery.html">Desery </a></li> 
-                    <li><a href="kebab.html">Kebab </a></li>
-                    <li><a href="kolacje.html">Kolacje </a></li> 
-                    <li><a href="obiady.html">Obiady </a></li> 
-                    <li><a href="pizza.html">Pizza </a></li>
-                    <li><a href="przekaski.html">Przekąski </a></li> 
-                    <li><a href="sushi.html">Sushi </a></li>
-                    <li><a href="sniadania.html">Śniadania </a></li>   
-                    <li><a href="wegetarianska.html">Wegetariańska </a></li> 
-                 </ul>
-            </li>
-            <li><span class="odstepik">: - :</span></li>
-            <li><a href="kontakt.html"><span class="link2">Kontakt</span></a></li>
-        </ul>
-    </div>
+            <ul id="pierwszy_poziom">
+                <li><a href="restauracje.html"><span class="link2">Restauracje</span></a></li>
+                <li><span class="odstepik">: - :</span></li>
+                <li><a href="#"><span class="link2">Kuchnia Świata</span></a>
+                    <ul class="drugi_poziom">
+                        <li class="pierwszy_element_menu"><li><a href="amerykanska.html">Amerykańska </a></li>
+                        <li><a href="azjatycka.html">Azjatycka </a></li>
+                        <li><a href="Polska.html">Polska </a></li>
+                        <li><a href="turecka.html">Turecka </a></li>
+                        <li><a href="wloska.html">Włoska </a></li>   
+                     </ul>
+                </li>
+                <li><span class="odstepik">: - :</span></li>
+                <li><a href="#"><span class="link2">Posiłki</span></a>
+                    <ul class="trzeci_poziom">
+                        <li class="pierwszy_element_menu"><a href="burgery.html">Burgery </a></li>
+                        <li><a href="desery.html">Desery </a></li> 
+                        <li><a href="kebab.html">Kebab </a></li>
+                        <li><a href="kolacje.html">Kolacje </a></li> 
+                        <li><a href="obiady.html">Obiady </a></li> 
+                        <li><a href="pizza.html">Pizza </a></li>
+                        <li><a href="przekaski.html">Przekąski </a></li> 
+                        <li><a href="sushi.html">Sushi </a></li>
+                        <li><a href="sniadania.html">Śniadania </a></li>   
+                        <li><a href="wegetarianska.html">Wegetariańska </a></li> 
+                     </ul>
+                </li>
+                <li><span class="odstepik">: - :</span></li>
+                <li><a href="zamowienie.html"><span class="link2">Zamówienie</span></a></li>
+                <li><span class="odstepik">: - :</span></li>
+                <li><a href="kontakt.html"><span class="link2">Kontakt</span></a></li>
+            </ul>
+        </div>
     <!-- Koniec div srodkowe menu-->
     <div id="zawartosc">
         <div id="gorna_czesc_zawartosci"></div>
@@ -95,7 +98,7 @@
                 <input type="url" id="url-id" name="witryna" required="required"><br>
                 <label for="email-id">Adres email:</label> <!-- poprawny email -->
                 <input type="email" id="email-id" name="email" required="required"><br>
-                <button type="submit">Zarejestruj</button>
+                <input class="submit_button" type="submit" value="Zarejestruj" />
             </div>
         </div>
         <!-- koniec div srodkowa czesc zawartosci -->
