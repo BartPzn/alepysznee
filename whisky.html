@@ -11,7 +11,7 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <meta name="Author" content="Bartosz Sarnacki, Jędrzej Sedeńko, Brian Ważny"> 
         <link rel="stylesheet" href="style.css" type="text/css" />
-        <link rel="stylesheet" media="screen and (min-width: 0px) and (max-width: 481px) " href="mobile.css" />
+        <link r1el="stylesheet" media="screen and (min-width: 0px) and (max-width: 481px) " href="mobile.css" />
         <link rel="stylesheet" media="screen and (min-width: 481px) and (max-width: 800px)" href="tablet.css">
 </head>
 <body> 
@@ -92,11 +92,11 @@
                 <p>Wpisz cyfre od 1 -5 gdzie 1 to ocena słaba 5 znakomita</p>
                     <body>
                         <body style="background-color:white">  
-                            <form action="#.php" method="post"></form>    
+                            <form action="plik.php" method="GET">   
                             <fieldset>
                     <label for="danie-id">Danie:</label> 
                     <form>
-                        <SELECT NAME="ocena_danie">
+                        <SELECT NAME="liczba1">
                             <OPTION> 5
                                 <OPTION> 4
                                     <OPTION> 3
@@ -104,9 +104,11 @@
                                             <OPTION> 1
                                                 
                         </SELECT><br>
+                        
+                     
                     <label for="obsługa-id">Obsługa:</label>
                     <form>
-                        <SELECT NAME="ocena_obsługa">
+                        <SELECT NAME="liczba2">
                             <OPTION> 5
                                 <OPTION> 4
                                     <OPTION> 3
@@ -114,9 +116,10 @@
                                             <OPTION> 1
                                                 
                         </SELECT><br>
+                     
                     <label for="dostawa-id">Czas dostawy:</label>
                     <form>
-                        <SELECT NAME="ocena_dostawa">
+                        <SELECT NAME="liczba3">
                             <OPTION> 5
                                 <OPTION> 4
                                     <OPTION> 3
@@ -126,8 +129,8 @@
                         </SELECT><br>
                     <label for="ocena-id">Aktualna ocena użytkowników wynosi:</label><br>
                     <input class="submit_button" type="submit" value="Zapisz" />
+                </form> 
                 </div>
-
             </div>
         </div>
         <!-- koniec div srodkowa czesc zawartosci -->

@@ -92,43 +92,47 @@
                     </form></br> 
                     <p>Oceń restauracje:</p></br>
                     <p>Wpisz cyfre od 1 -5 gdzie 1 to ocena słaba 5 znakomita</p>
-                        <body>
-                            <body style="background-color:white">  
-                                <form action="#.php" method="post"></form>    
-                                <fieldset>
-                                    
-                        <label for="danie-id">Danie:</label> 
-                        <form>
-                            <SELECT NAME="ocena-danie">
-                                <OPTION> 5
-                                    <OPTION> 4
-                                        <OPTION> 3
-                                            <OPTION> 2
-                                                <OPTION> 1
-                                                    
-                            </SELECT><br>
-                        <label for="obsługa-id">Obsługa:</label>
-                        <form>
-                            <SELECT NAME="ocena_obsługa">
-                                <OPTION> 5
-                                    <OPTION> 4
-                                        <OPTION> 3
-                                            <OPTION> 2
-                                                <OPTION> 1
-                                                    
-                            </SELECT><br>
-                        <label for="dostawa-id">Czas dostawy:</label>
-                        <form>
-                            <SELECT NAME="ocena_dostawa">
-                                <OPTION> 5
-                                    <OPTION> 4
-                                        <OPTION> 3
-                                            <OPTION> 2
-                                                <OPTION> 1
-                                                    
-                            </SELECT><br>
-                        <label for="ocena-id">Aktualna ocena użytkowników wynosi:</label></b>
-                        <input class="submit_button" type="submit" value="Zapisz" />
+                    <body>
+                        <body style="background-color:white">  
+                            <form action="plik.php" method="GET">   
+                            <fieldset>
+                    <label for="danie-id">Danie:</label> 
+                    <form>
+                        <SELECT NAME="liczba1">
+                            <OPTION> 5
+                                <OPTION> 4
+                                    <OPTION> 3
+                                        <OPTION> 2
+                                            <OPTION> 1
+                                                
+                        </SELECT><br>
+                        
+                       
+                    <label for="obsługa-id">Obsługa:</label>
+                    <form>
+                        <SELECT NAME="liczba2">
+                            <OPTION> 5
+                                <OPTION> 4
+                                    <OPTION> 3
+                                        <OPTION> 2
+                                            <OPTION> 1
+                                                
+                        </SELECT><br>
+                       
+                    <label for="dostawa-id">Czas dostawy:</label>
+                    <form>
+                        <SELECT NAME="liczba3">
+                            <OPTION> 5
+                                <OPTION> 4
+                                    <OPTION> 3
+                                        <OPTION> 2
+                                            <OPTION> 1
+                                                
+                        </SELECT><br>
+                    <label for="ocena-id">Aktualna ocena użytkowników wynosi:</label><br>
+                    <input class="submit_button" type="submit" value="Zapisz" />
+                </form> 
+                </div>
             </div>
         </div>
         <!-- koniec div srodkowa czesc zawartosci -->
