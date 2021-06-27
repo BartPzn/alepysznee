@@ -75,61 +75,35 @@
     <div id="zawartosc">
         <div id="gorna_czesc_zawartosci"></div>
         <div id="srodkowa_czesc_zawartosci">
-            <div id="menu">
-               <h1> Ratuszova Restaurant A.D. 1954</h1>
-               <h1>Menu</h1>
-            
-                <p> Schab z kością / młoda kapusta z koperkiem / ziemniaki puree - 37 PLN</p>
-                <form action="jeden.php" method="GET">
-                    <input type="radio" name="nazwa" value="wartość1">Zaznacz to danie
-                </br>
-                <p>Stek z polędwicy wołowej / szpinak z młodym czosnkiem / grillowany ziemniak z masłem grzybowo - serowym / sezonowe warzywa / demi-glace lubczykowy - 89 PLN</p>
-                    <input type="radio" name="nazwa" value="wartość2">Zaznacz to danie
-                </br>
-                <p>Połówka kaczki pieczona z jabłkami / pyzy drożdżowe / kapusta modra / macerowana żurawina / sos własny z majerkankiem - 85 PLN</p>
-                    <input type="radio" name="nazwa" value="wartość3">Zaznacz to danie</br> 
-               <input class="submit_button" type="submit" value="Potwierdz zamowienie" /></a>  
-            </form></br>         
-                <p>Oceń restauracje:</p></br>
-                <p>Wpisz cyfre od 1 -5 gdzie 1 to ocena słaba 5 znakomita</p>
-                    <body>
-                        <body style="background-color:white">  
-                            <form action="#.php" method="post"></form>    
-                            <fieldset>
-                    <label for="danie-id">Danie:</label> 
-                    <form>
-                        <SELECT NAME="ocena_danie">
-                            <OPTION> 5
-                                <OPTION> 4
-                                    <OPTION> 3
-                                        <OPTION> 2
-                                            <OPTION> 1
-                                                
-                        </SELECT><br>
-                    <label for="obsługa-id">Obsługa:</label>
-                    <form>
-                        <SELECT NAME="ocena_obsługa">
-                            <OPTION> 5
-                                <OPTION> 4
-                                    <OPTION> 3
-                                        <OPTION> 2
-                                            <OPTION> 1
-                                                
-                        </SELECT><br>
-                    <label for="dostawa-id">Czas dostawy:</label>
-                    <form>
-                        <SELECT NAME="ocena_dostawa">
-                            <OPTION> 5
-                                <OPTION> 4
-                                    <OPTION> 3
-                                        <OPTION> 2
-                                            <OPTION> 1
-                                                
-                        </SELECT><br>
-                    <label for="ocena-id">Aktualna ocena użytkowników wynosi:</label>
-                    <input class="submit_button" type="submit" value="Zapisz" />
-                </div>
+            <div id="tekst">
+                <body>
+                    <body style="background-color:white">  
+                        <form action="register.php" method="post"></form>    
+                        <fieldset>
+                       
+                <legend>Wpisz dane potrzebne do zamówienia</legend>
+                <label for="imie-id">Imię lub nazwa firmy:</label> 
+                <input type="text" size="12" name="imie" id="imie-id" minlength="3" maxlength="40" required="required"><br>
+                <label for="nazwisko-id">Nazwisko</label>
+                <input type="text" size="12" name="nazwisko" id="nazwisko-id" minlength="3" maxlength="20" required="required"><br>
+                <label>Hasło<input type"pasword" name="haslo"></label><br>
+                <label>Powtórz Hasło<input type"pasword" name="haslo"></label><br>
+                <label for="tel-id">Nr tel. komórkowego:</label>
+                <!-- dokładnie 9 cyfr od 0-9 -->
+                <input type="number" id="tel-id" name="telefon" pattern="[0-9]{9}" placeholder="Wprowadź 9
+                cyfr" required="required" title="Wprowadź numer telefonu składajacy się z 9 cyfr "><br>
+                <label for="data-id">Data urodzenia:</label>
+                <!-- najwcześniejsza dopuszczalna data to 1 stycznia 1900 -->
+                <input type="date" name="urodziny" id="data-id" min="1900-01-01" required="required"><br>
+                <label for="url-id" required>Twoja witryna internetowa:</label> <!-- URL -->
+                <input type="url" id="url-id" name="witryna" required="required"><br>
+                <label for="email-id">Adres email:</label> <!-- poprawny email -->
+                <input type="email" id="email-id" name="email" required="required"><br>
+                <a href="ZrobZamowienie.html"><input class="submit_button" type="submit" value="Potwierdz zamowienie" /></a>
+            </div>
 
+                <p>  </p>
+                <p></p>
             </div>
         </div>
         <!-- koniec div srodkowa czesc zawartosci -->

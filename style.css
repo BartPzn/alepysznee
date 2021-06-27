@@ -166,10 +166,8 @@ position: relative;
 #pierwszy_poziom li .drugi_poziom
 {
 position: absolute;
-top: 1,9em;
+top: 1em;
 left: 0em;
-
-
 }
 #pierwszy_poziom > li
 {
@@ -242,10 +240,8 @@ position: relative;
 #pierwszy_poziom li .trzeci_poziom
 {
 position: absolute;
-top: 1,9em;
+top: 1em;
 left: 0em;
-
-
 }
 #pierwszy_poziom > li
 {

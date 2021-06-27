@@ -27,7 +27,6 @@ margin: 0 auto;
 /* GÓRNA CZĘŚĆ KONTENERA */
 #gorna_czesc_kontenera
 {
-position: right;
 margin-top: 1%;
 background-image: url('gora_i_dol_M.gif');
 width: 100%;
@@ -49,7 +48,7 @@ right: 40px;
 top: 7px;
 font-family: "Trebuchet MS", Helvetica, sans-serif;
 font-size: 0px;
-color: none;
+
 line-height: 125%;
 }
 #kontakt_box a
@@ -59,7 +58,6 @@ border-bottom: none;
 /* Menu Górne */
 #gorne_menu
 {
-position: right;
 right: 0%;
 bottom: -8%;
 }

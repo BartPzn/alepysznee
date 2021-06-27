@@ -78,22 +78,18 @@
             <div id="menu">
                <h1> MO.BAR</h1>
                  <h1>Menu</h1>
-                
-                <p><b>MO.KACZKA</b></p>
-                <p>burger z szarpaną piersią kaczki, orientalną sałatką, sosem hoisin, majonezem limonkowym, piklowanym zielonym ogórkiem, piklowaną rzodkiewką i szczypiorkiem - 37 PLN</p>
-                <form action="#" method="post">
-                    <input type="checkbox" name="nazwa" value="wartość">Zaznacz to danie
-                </form></br>
-                <p>PISTOU</p>
-                <p>wiosenna francuska zupa z sezonowymi warzywami, makaronem, bazyliowym sosem pistou i parmezanem - 24 PLN</p>
-                <form action="#" method="post">
-                    <input type="checkbox" name="nazwa" value="wartość">Zaznacz to danie
-                </form></br>
-                <p>Frytki z batatów - 30 PLN</p></br>
-                <form action="#" method="post">
-                    <form action="#" method="post">
-                        <input type="checkbox" name="nazwa" value="wartość">Zaznacz to danie
-                    </form></br>                
+                 
+                    <p><b>MO.KACZKA</b></p>
+                    <p>burger z szarpaną piersią kaczki, orientalną sałatką, sosem hoisin, majonezem limonkowym, piklowanym zielonym ogórkiem, piklowaną rzodkiewką i szczypiorkiem - 37 PLN</p>
+                    <form action="trzy.php" method="GET">
+                    <input type="radio" name="nazwa" value="id1">Zaznacz to danie</br>
+                    <p>PISTOU</p>
+                    <p>wiosenna francuska zupa z sezonowymi warzywami, makaronem, bazyliowym sosem pistou i parmezanem - 24 PLN</p>
+                    <input type="radio" name="nazwa" value="id2">Zaznacz to danie</br>
+                     <p>Frytki z batatów - 30 PLN</p></br>
+                    <input type="radio" name="nazwa" value="id3">Zaznacz to danie</br>
+                    <input class="submit_button" type="submit" value="Potwierdz zamowienie" /></a>
+                    </form></br> 
                     <p>Oceń restauracje:</p></br>
                     <p>Wpisz cyfre od 1 -5 gdzie 1 to ocena słaba 5 znakomita</p>
                         <body>
@@ -102,13 +98,36 @@
                                 <fieldset>
                                     
                         <label for="danie-id">Danie:</label> 
-                        <input type="number" size="2" name="ocena" id="danie" minlength="1" maxlength="1" pattern="[1-5]{5}" required="required"><br>
+                        <form>
+                            <SELECT NAME="ocena-danie">
+                                <OPTION> 5
+                                    <OPTION> 4
+                                        <OPTION> 3
+                                            <OPTION> 2
+                                                <OPTION> 1
+                                                    
+                            </SELECT><br>
                         <label for="obsługa-id">Obsługa:</label>
-                        <input type="number" size="2" name="ocena" id="obsługa-id" minlength="1" maxlength="1" pattern="[1-5]{5}" required="required"><br>
+                        <form>
+                            <SELECT NAME="ocena_obsługa">
+                                <OPTION> 5
+                                    <OPTION> 4
+                                        <OPTION> 3
+                                            <OPTION> 2
+                                                <OPTION> 1
+                                                    
+                            </SELECT><br>
                         <label for="dostawa-id">Czas dostawy:</label>
-                        <input type="number" size="2" name="ocena" id="dostawa-id" minlength="1" maxlength="1" pattern="[1-5]{5}" required="required"><br>
-                        <label for="ocena-id">Aktualna ocena użytkowników wynosi:</label>
-                        <input type="number" size="2" name="ocena" id="ocena-id" minlength="1" maxlength="1" pattern="[1-5]{5}" required="required"><br>
+                        <form>
+                            <SELECT NAME="ocena_dostawa">
+                                <OPTION> 5
+                                    <OPTION> 4
+                                        <OPTION> 3
+                                            <OPTION> 2
+                                                <OPTION> 1
+                                                    
+                            </SELECT><br>
+                        <label for="ocena-id">Aktualna ocena użytkowników wynosi:</label></b>
                         <input class="submit_button" type="submit" value="Zapisz" />
             </div>
         </div>

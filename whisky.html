@@ -76,20 +76,17 @@
         <div id="gorna_czesc_zawartosci"></div>
         <div id="srodkowa_czesc_zawartosci">
             <div id="menu">
-               <h1> WHISKY IN THE JAR</h1>
+                <h1> WHISKY IN THE JAR</h1>
                  <h1>Menu</h1>
             
                 <p> Rock'N'Steak 280g / SOS BBQ / Frytki stekowe/ mix sałat - 89 PLN</p>
-                <form action="#" method="post">
-                    <input type="checkbox" name="nazwa" value="wartość">Zaznacz to danie
-                </form></br>
+                <form action="dwa.php" method="GET">
+                    <input type="radio" name="nazwa" value="wartość1">Zaznacz to danie</br>
                 <p>Country Burger /180g wołowiny / jajko sadzone / grilowany bekon / sałata / pomidor / rukola / sos Dijon - 39 PLN</p>
-                <form action="#" method="post">
-                    <input type="checkbox" name="nazwa" value="wartość">Zaznacz to danie
-                </form></br>
+                    <input type="radio" name="nazwa" value="wartość2">Zaznacz to danie</br>
                 <p>grillowane żeberka BBQ / sos BBQ / Jack Daniel's Tennesse Whisky /Frytki stekowe / mix sałat - 59 PLN</p>
-                <form action="#" method="post">
-                    <input type="checkbox" name="nazwa" value="wartość">Zaznacz to danie
+                    <input type="radio" name="nazwa" value="wartość3">Zaznacz to danie</br>
+                    <input class="submit_button" type="submit" value="Potwierdz zamowienie" /></a>
                 </form></br>
                 <p>Oceń restauracje:</p></br>
                 <p>Wpisz cyfre od 1 -5 gdzie 1 to ocena słaba 5 znakomita</p>
@@ -98,14 +95,37 @@
                             <form action="#.php" method="post"></form>    
                             <fieldset>
                     <label for="danie-id">Danie:</label> 
-                    <input type="number" size="2" name="ocena" id="danie" minlength="1" maxlength="1" pattern="[1-5]{5}" required="required"><br>
+                    <form>
+                        <SELECT NAME="ocena_danie">
+                            <OPTION> 5
+                                <OPTION> 4
+                                    <OPTION> 3
+                                        <OPTION> 2
+                                            <OPTION> 1
+                                                
+                        </SELECT><br>
                     <label for="obsługa-id">Obsługa:</label>
-                    <input type="number" size="2" name="ocena" id="obsługa-id" minlength="1" maxlength="1" pattern="[1-5]{5}" required="required"><br>
+                    <form>
+                        <SELECT NAME="ocena_obsługa">
+                            <OPTION> 5
+                                <OPTION> 4
+                                    <OPTION> 3
+                                        <OPTION> 2
+                                            <OPTION> 1
+                                                
+                        </SELECT><br>
                     <label for="dostawa-id">Czas dostawy:</label>
-                    <input type="number" size="2" name="ocena" id="dostawa-id" minlength="1" maxlength="1" pattern="[1-5]{5}" required="required"><br>
-                    <label for="ocena-id">Aktualna ocena użytkowników wynosi:</label>
-                    <input type="number" size="2" name="ocena" id="ocena-id" minlength="1" maxlength="1" pattern="[1-5]{5}" required="required"><br>
-                    <input class="submit_button" type="submit" value="Zapisz" />	
+                    <form>
+                        <SELECT NAME="ocena_dostawa">
+                            <OPTION> 5
+                                <OPTION> 4
+                                    <OPTION> 3
+                                        <OPTION> 2
+                                            <OPTION> 1
+                                                
+                        </SELECT><br>
+                    <label for="ocena-id">Aktualna ocena użytkowników wynosi:</label><br>
+                    <input class="submit_button" type="submit" value="Zapisz" />
                 </div>
 
             </div>
